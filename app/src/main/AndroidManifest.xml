@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ponomarenko.igor.fintesstrainer" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name=".TrainingProvider"
+            android:authorities="ponomarenko.igor.fintesstrainer.trainingprovider"
+            android:exported="false" />
+
+        <activity
+            android:name=".TrainingActivity"
+            android:label="@string/title_activity_training"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".TrainingConfigurationActivity"
+            android:label="@string/title_activity_training_configuration"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ponomarenko.igor.fintesstrainer.MainActivity" />
+        </activity>
+        <activity
+            android:name=".WorkoutConfigurationActivity"
+            android:label="@string/title_activity_workout_configuration"
+            android:parentActivityName=".TrainingConfigurationActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TrainingConfigurationActivity" />
+        </activity>
+
+        <service
+            android:name=".TrainingService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+    </application>
+
+</manifest>

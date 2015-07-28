@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Fintess Trainer</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_training">Training</string>
+    <string name="daysFromLastTraining">Last training was 7 days ago</string>
+    <string name="startTraining">Start Training</string>
+    <string name="configureTraining">Configure trainings</string>
+    <string name="str_current_workout">Current workout:</string>
+    <string name="str_current_set">Set:</string>
+    <string name="str_reps_in_current_set">Reps:</string>
+    <string name="rest_between_sets">Rest between sets:</string>
+    <string name="beep_enabled">Beep enabled</string>
+    <string name="skip_workout">Skip workout</string>
+    <string name="pause">Pause</string>
+    <string name="resume">Resume</string>
+    <string name="equipment_busy">Equipment busy</string>
+    <string name="title_activity_training_configuration">TrainingConfiguration</string>
+    <string name="title_activity_workout_configuration">WorkoutConfiguration</string>
+    <string name="add_workout">Add Workout</string>
+    <string name="action_delete">Delete</string>
+    <string name="completion_Skipped">Skipped</string>
+    <string name="completion_Assigned">Assigned</string>
+    <string name="completion_Completed">Completed</string>
+</resources>
